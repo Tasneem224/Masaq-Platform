@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Notifications
 {
-    internal class Notification: BaseOfAllContentEntities
+    public class Notification: BaseOfAllContentEntities
 
     {
 

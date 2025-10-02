@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Data.Configration_classes
 {
-    internal class BaseOfAllEntityConfigrationClass<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : BaseOfAllContentEntities
+    public class BaseOfAllEntityConfigrationClass<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : BaseOfAllContentEntities
     {
         public void Configure(EntityTypeBuilder<TEntity> builder)
         {

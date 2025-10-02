@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using DataAccessLayer.Models.Notifications;
+using DataAccessLayer.Models.Teachers;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccessLayer.Data.Configration_classes
 {
-    internal class NotificationConfigrationClass
+    public class NotificationConfigrationClass: BaseOfAllEntityConfigrationClass<Notification>, IEntityTypeConfiguration<Notification>
+
     {
+        public void Configure(EntityTypeBuilder<Notification> builder)
+        {
+            builder.Property(a => a.Header).HasColumnType("nvarchar(50)").IsRequired();
+            builder.Property(a => a.Body).HasColumnType("nvarchar(600)").IsRequired();
+
+            base.Configure(builder);
+
+        }
     }
 }
