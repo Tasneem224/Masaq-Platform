@@ -13,7 +13,7 @@ namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(MasaqDbContext))]
     [Migration("20251002165216_AddTeacherTable")]
-    partial class AddTeacherAndStudentTables
+    partial class AddTeacherTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

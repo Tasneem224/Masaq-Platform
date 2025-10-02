@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models
 {
-    internal class BaseOfAllEntity
+    public class BaseOfAllContentEntities
     {
         public int Id { get; set; }//PK
         public int CreatedBy { get; set; }// UserId

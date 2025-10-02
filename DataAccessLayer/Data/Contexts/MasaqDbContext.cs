@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Models.Students;
+﻿using DataAccessLayer.Models.Announcements;
+using DataAccessLayer.Models.Students;
 using DataAccessLayer.Models.Teachers;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,5 +25,7 @@ namespace DataAccessLayer.Data.Contexts
         }
         public DbSet<Teacher> Teachers {  get; set; }
         public DbSet<Student> Students {  get; set; }
+        public DbSet<Announcement> Announcements {  get; set; }
+
     }
 }
