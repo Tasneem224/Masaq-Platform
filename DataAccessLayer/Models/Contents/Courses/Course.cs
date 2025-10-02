@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Models.Contents
+namespace DataAccessLayer.Models.Contents.Courses
 {
-    internal class Course
+    public class Course:BaseOfAllContentEntities
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public ICollection<Lesson> lessons { get; set; }
+        //public ICollection<Lesson> lessons { get; set; }
     }
 }

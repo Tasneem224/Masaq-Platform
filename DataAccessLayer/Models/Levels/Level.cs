@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Levels
 {
-    internal class Level
+    public class Level:BaseOfAllContentEntities
     {
-        public int id { get; set; }
+
         public int LevelNumber { get; set; }
         public int NumberOfStudents { get; set; }
-        public int AcademicYear { get; set; }
+        public string AcademicYear { get; set; }
     }
 }

@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Contents.Lessons
 {
-    internal class Lesson:BaseEntityExam
+    public class Lesson:BaseOfAllContentEntities
     {
-       
-        public string Description { get; set; }
+        public string Title { get; set; }
+        public string? Description { get; set; }
         public string? ImageName { get; set; }
         public string? VideoName { get; set; }
         public string? DocName { get; set; }
+
         //public ICollection<StudentLesson> studentLessons { get; set; } = new HashSet<StudentLesson>();
 
 

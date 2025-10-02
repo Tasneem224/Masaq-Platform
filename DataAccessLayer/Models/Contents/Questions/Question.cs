@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Contents.Questions
 {
-    public class Question:BaseEntityExam
+    public class Question:BaseOfAllContentEntities
     {
         public string Header { get; set; }
         public string Body { get; set; }

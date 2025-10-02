@@ -1,5 +1,10 @@
 ﻿using DataAccessLayer.Models.Announcements;
 using DataAccessLayer.Models.Contents.Answers;
+using DataAccessLayer.Models.Contents.Courses;
+using DataAccessLayer.Models.Contents.Exams;
+using DataAccessLayer.Models.Contents.Lessons;
+using DataAccessLayer.Models.Contents.Questions;
+using DataAccessLayer.Models.Levels;
 using DataAccessLayer.Models.Notifications;
 using DataAccessLayer.Models.Students;
 using DataAccessLayer.Models.Teachers;
@@ -29,6 +34,11 @@ namespace DataAccessLayer.Data.Contexts
         public DbSet<Student> Students {  get; set; }
         public DbSet<Announcement> Announcements {  get; set; }
         public DbSet<Answer> Answer {  get; set; }
+        public DbSet<Exam> Exams {  get; set; }
+        public DbSet<Lesson> Lessons {  get; set; }
+        public DbSet<Course> Courses {  get; set; }
+        public DbSet<Question> Questions {  get; set; }
+        public DbSet<Level> Levels {  get; set; }
         public DbSet<Notification> Notifications {  get; set; }
 
     }

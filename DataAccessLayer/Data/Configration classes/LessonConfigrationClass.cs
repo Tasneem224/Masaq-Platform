@@ -1,5 +1,4 @@
 ﻿using DataAccessLayer.Models.Contents.Lessons;
-using DataAccessLayer.Models.Levels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -10,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Data.Configration_classes
 {
-    internal class LevelConfigrationClass : BaseOfAllEntityConfigrationClass<Level>,IEntityTypeConfiguration<Level>
+    public class LessonConfigrationClass :BaseOfAllEntityConfigrationClass<Lesson>, IEntityTypeConfiguration<Lesson>
     {
-        public void Configure(EntityTypeBuilder<Level> builder)
+        public void Configure(EntityTypeBuilder<Lesson> builder)
         {
-            builder.Property(l => l.AcademicYear).HasColumnType("nvarchar(100)");
+            builder.Property(l => l.Description).HasColumnType("nvarchar(200)");
             base.Configure(builder);
         }
     }
