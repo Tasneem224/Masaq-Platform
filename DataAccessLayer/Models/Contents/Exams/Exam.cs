@@ -8,18 +8,19 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Contents.Exams
 {
-    public class Exam:BaseEntityExam
+    public class Exam:BaseOfAllContentEntities
     {
 
         public int Duration { get; set; }
-        public string Description{ get; set; }
+        public string? Title { get; set; }
+        public string? Description{ get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public bool IsCompleted { get; set; }
-        public bool Status { get; set; }
-        public DateTime? CreatedAt {  get; set; }
-        public DateTime? ModifiedAt {  get; set; }
-        public bool IsDeleted {  get; set; }
+        public bool? Status { get; set; }
+        public bool IsAvaliable { get; set; }
+        
+        //is passed or not
         //public ICollection<Question> questions { get; set; }=new HashSet<Question>();
 
 

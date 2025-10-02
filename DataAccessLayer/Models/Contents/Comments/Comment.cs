@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models.Contents.Comments
 {
-    internal class Comment
+    internal class Comment:BaseOfAllContentEntities
     {
         public int Id { get; set; }
         public string Body { get; set; }
+        public string? Image {  get; set; }
     }
 }
